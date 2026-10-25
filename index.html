@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>profe - Julia</title>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Pacifico for handwritten script, Inter for crisp sans-serif -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Inter:wght@500;600;700;800&amp;family=Pacifico&amp;display=swap" rel="stylesheet">
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="typography">
+    .font-script {
+      font-family: 'Pacifico', 'Caveat', cursive;
+    }
+    .font-sans-ui {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+  </style>
+<style data-purpose="image-effects">
+    /* Bottom soft gradient mask for seamless fading into white background */
+    .fade-bottom-mask {
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 58%, rgba(0,0,0,0.4) 84%, rgba(0,0,0,0) 100%);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 58%, rgba(0,0,0,0.4) 84%, rgba(0,0,0,0) 100%);
+    }
+  </style>
+<style data-purpose="button-shadows">
+    .shadow-purple-glow {
+      box-shadow: 0 10px 25px -4px rgba(168, 85, 247, 0.42), 0 4px 12px -2px rgba(168, 85, 247, 0.25);
+    }
+    .shadow-dark-soft {
+      box-shadow: 0 10px 22px -4px rgba(74, 64, 79, 0.45), 0 4px 10px -2px rgba(74, 64, 79, 0.25);
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="bg-white text-gray-900 font-sans-ui antialiased selection:bg-purple-100 selection:text-purple-900 flex justify-center min-h-screen">
+<!-- BEGIN: MainContainer -->
+<!-- Constrained mobile-width container resembling standard iOS link-in-bio viewport -->
+<main class="w-full max-w-[420px] min-h-screen flex flex-col items-center px-4 pt-4 pb-8 bg-white relative">
+<!-- BEGIN: ProfileHeroImage -->
+<header class="w-full flex justify-center relative select-none" data-purpose="profile-hero">
+<div class="w-[310px] sm:w-[330px] rounded-3xl overflow-hidden relative">
+<img alt="Foto de Julia - Professora" class="w-full h-[370px] sm:h-[390px] object-cover object-top fade-bottom-mask rounded-t-3xl" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC12qklj6U9_dCfwcRecEYo0uG2qbVnyFw5SI6ubYXQxZtXOo3Hn2EUVLK0lZ7gDr5yHv4L1Z7B-CyIVZpt5ff2rlLYFaQ2j7O8bvocFZBWD7ESFzEkVhJB0GJxHYYH9EeI0pB-1A2RcMMQ8ga5-dzgJVBXa-BhiG1Kx7sEkVnvnumBazEE_uB0uA1deXBaqE-Cuxy3d6Egst1_aYpAx1s5ucwpx62UXmpv7G7Kt6vuqb33u2sTg-3DRnCWF_YpLSj2Ng">
+</div>
+</header>
+<!-- END: ProfileHeroImage -->
+<!-- BEGIN: BioSection -->
+<section class="w-full flex flex-col items-center text-center -mt-8 z-10 px-2" data-purpose="bio-header">
+<!-- Cursive handwritten profile name -->
+<h1 class="font-script text-[42px] leading-tight text-[#79247d] tracking-wide scale-y-105 mb-2 font-normal">profe - Laurinha</h1>
+<!-- Uppercase description paragraph verbatim from original design -->
+<p class="text-[#7e2584] text-[11px] sm:text-[11.5px] font-extrabold tracking-wide uppercase leading-[1.38] max-w-[315px]">
+        OI AMOR...QUER TER UMA AULA PARTICULAR COM A MELHOR PROFESSORA DO INSTAGRAM? ENTRA AQUI E VEM APROVEITAR
+      </p>
+<!-- Decorative playful dashed directional arrow pointing to buttons -->
+<div aria-hidden="true" class="my-4 flex justify-center items-center text-[#7e2584]">
+<svg class="stroke-[#7e2584]" fill="none" height="42" viewBox="0 0 24 42" width="24" xmlns="http://www.w3.org/2000/svg">
+<!-- Wavy dotted path with subtle curve -->
+<path d="M12 2 C 7 10, 16 20, 12 34" stroke="currentColor" stroke-dasharray="3 3.5" stroke-linecap="round" stroke-width="2.3"></path>
+<!-- Arrowhead -->
+<polygon fill="#7e2584" points="6,31 18,31 12,41" stroke="none"></polygon>
+</svg>
+</div>
+</section>
+<!-- END: BioSection -->
+<!-- BEGIN: ActionButtons -->
+<section class="w-full flex flex-col items-center gap-3.5 mt-0.5 px-3" data-purpose="link-actions">
+<!-- Button 1: Privacy VIP Access -->
+<a class="w-full max-w-[340px] h-[58px] bg-[#a855f7] hover:bg-[#9d47ed] active:scale-[0.98] transition-all duration-150 rounded-full flex items-center px-4 relative shadow-purple-glow cursor-pointer text-white group" data-purpose="privacy-button" href="https://t.me/+c4DnjUPUOZ4wZjQx" rel="noopener noreferrer" target="_blank"><!-- Circular Telegram Icon Badge -->
+<span class="w-9 h-9 rounded-full bg-[#fcece0] flex items-center justify-center flex-shrink-0 shadow-sm text-[#a855f7]">
+<svg class="w-4 h-4 translate-x-[-0.5px] translate-y-[-0.5px]" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.61 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.38-.49 1.03-.75 4.04-1.76 6.74-2.92 8.09-3.49 3.85-1.6 4.64-1.89 5.17-1.9.12 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.21-.04.44z"></path>
+</svg>
+</span>
+<!-- Button Centered Label -->
+<span class="absolute inset-0 flex items-center justify-center font-bold text-[16px] tracking-tight pointer-events-none text-white">
+  Salinha da Prof Grátis
+</span></a>
+<!-- Button 2: Telegram Free Group -->
+<a class="w-full max-w-[340px] h-[58px] bg-[#584f5e] hover:bg-[#4d4453] active:scale-[0.98] transition-all duration-150 rounded-full flex items-center px-4 relative shadow-dark-soft cursor-pointer text-white group" data-purpose="telegram-button" href="https://privacylaurinhaprofe.lovable.app/" rel="noopener noreferrer" target="_blank"><!-- Icon badge container with Privacy mark -->
+<span class="w-9 h-9 rounded-full bg-[#fcece0] flex items-center justify-center overflow-hidden flex-shrink-0 shadow-inner p-1">
+<img alt="Privacy Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi5DLS1fEot6l_jtgbWQZXbIhhao8yeqbTQDLoimexFf12lz9WYxtobBmZALbBlCgU1h20LF_l6U4t3trkTtXZPb7Ox_RBoT2yfv7wVufZE-_Ucmp8Yj0QMi7IN0xTJBvzSyQ8xYbNzqx4Ijp5q9ZcpN0zcQhXkN2UJeo4J0NWyuFbsWunD6nIjLPgDrY-payrW87BxtS7GvZ9YUWnWPOO6guDXuTkA9X7PsGyFBUv-dPuHBc0qLdQ5DKs0TxyJ5SNuA">
+</span>
+<!-- Button Centered Label -->
+<span class="absolute inset-0 flex items-center justify-center font-bold text-[17px] tracking-tight pointer-events-none text-gray-50">
+  Privacy
+</span></a>
+</section>
+<!-- END: ActionButtons -->
+<!-- BEGIN: Footer -->
+<footer class="mt-auto pt-14 pb-2 text-center" data-purpose="page-footer">
+<a class="text-[11.5px] font-medium text-[#a69eb3] hover:text-[#7e2584] transition-colors duration-150 inline-block" href="#">
+        Política de Privacidade
+      </a>
+</footer>
+<!-- END: Footer -->
+</main>
+<!-- END: MainContainer -->
+
+
+</body></html>
